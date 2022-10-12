@@ -1,3 +1,5 @@
+package model;
+
 public class User {
 
     private String firstName;
@@ -6,9 +8,10 @@ public class User {
     private int age;
     private boolean isAdult;
 
-    public User(String firstName, String lastName, int age) {
+    public User(String firstName, String lastName,String email, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.age = age;
         this.isAdult = isUserAdult();
     }
