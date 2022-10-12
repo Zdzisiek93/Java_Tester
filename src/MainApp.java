@@ -5,15 +5,26 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-//        Bug bug1 = new Bug("Bład klienta", "adam@błąd.pl", 1);
+        Bug newIssue = new Bug("Wystąpił problem z programem", "zgłoszenie@błędu.com", 4);
+
+//        System.out.println(newIssue.getBugDescription());
 //
-//        bug1.showAllInformation();
-//        bug1.showUserEmail();
-//        bug1.showBugStatus();
-//        bug1.showBugStatus();
+//        newIssue.setBugDescription("Teraz");
+//
+//        System.out.println(newIssue.getBugDescription());
 
-        User marian = new User("Marian", "Kowalski", "marian@kowalski.pl", 33);
+//        System.out.println(newIssue.getEmail());
+//
+//        newIssue.setEmail("dupadupa.pl");
+//
+//        System.out.println(newIssue.getEmail());
 
-        marian.getAllInfo();
+        System.out.println(newIssue.getBugPriority());
+
+        newIssue.setBugPriority(99);
+
+        System.out.println(newIssue.getBugPriority());
+//    }
     }
+
 }
